@@ -21,6 +21,7 @@ public class UserService {
 	}
 	
 	public List<User> getAll() {
+		// aucun souci pour ce warning
 		return em.createQuery("FROM User").getResultList();
 		 
 	}
